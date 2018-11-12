@@ -1,7 +1,9 @@
+package Aufgabe1;
+
 public class Start {
     public static void main(String[] args) {
 
-//      Feld objekte in dem die Autos gespeichert werden, Typ Auto
+//      Feld objekte in dem die Autos gespeichert werden, Typ Aufgabe1.Auto
         Auto[] objekte;
 
         Fabrik f = new Fabrik();
@@ -10,17 +12,17 @@ public class Start {
         objekte = f.ProduziereAuto(30);
 
 
-//      Gebe Info über 1. Auto der Produktion aus
+//      Gebe Info über 1. Aufgabe1.Auto der Produktion aus
         objekte[0].printAutoInfo();
 
         Parkplatz p = new Parkplatz();
 
-//      Parke 1. und 2. Auto der Produktion
+//      Parke 1. und 2. Aufgabe1.Auto der Produktion
         p.parkeAuto(objekte[0]);
         p.parkeAuto(objekte[1]);
 
 
-//      Gebe Info über den Parkplatz aus
+//      Gebe Info über den Aufgabe1.Parkplatz aus
         p.printParkplatzInfo();
 
 //      Gebe Info über Stellplatz 0 und 1 aus
