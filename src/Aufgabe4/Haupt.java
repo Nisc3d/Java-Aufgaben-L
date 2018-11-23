@@ -24,23 +24,23 @@ public class Haupt {
             s.einzahlen(100);
             s.setZinssatzProzent(15);
             s.verzinsen();
-        }
-        catch (KontoExistiertNichtException e){
+        } catch (KontoExistiertNichtException e) {
             System.out.println("Konto existiert nicht!");
         }
 
         try {
             s.abheben(50);
+        } catch (KontostandException | KontoExistiertNichtException f) {
+            System.out.println("Zu wenig Geld auf Konto!");
         }
-        catch (KontostandException f, KontoExistiertNichtException g){
-            System.out.println("Zu wenig Geld auf Konto");
+
+        try {
+            System.out.println("Besitzer: " + s.getBesitzer());
+            System.out.println("Kontnummer: " + s.getKontonummer());
+            System.out.println("Kontostand: " + s.getKontostand());
+        } catch (KontoExistiertNichtException g) {
+            System.out.println("Konto existiert nicht!");
         }
-
-
-
-
-
-
 
     }
 }
