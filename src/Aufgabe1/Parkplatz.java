@@ -2,13 +2,13 @@ package Aufgabe1;
 
 public class Parkplatz {
 
-//  Erstelle Array für Autostellplätze vom Typ Aufgabe1.Auto mit Platz für 20 Autos
+//  Erstelle Array für Autostellplätze vom Typ Auto mit Platz für 20 Autos
     Auto[] stellplatz = new Auto[20];
 
     void parkeAuto(Auto auto) {
         int i = 0;
         while (i < 20) {
-            //wenn aktueller Stellplatz leer, dann schiebe Aufgabe1.Auto in Array Stellplatz an der Stelle und dann Schluss
+            //wenn aktueller Stellplatz leer, dann schiebe Auto in Array Stellplatz an der Stelle und dann Schluss
             if (stellplatz[i] == null) {
                 stellplatz[i] = auto;
                 break;

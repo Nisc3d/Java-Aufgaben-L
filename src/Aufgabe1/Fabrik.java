@@ -4,7 +4,7 @@ public class Fabrik {
     Auto[] ProduziereAuto(int anzahl) {
         int i = 0, seriennummer = 99999, anzahl_ps = 0, anzahl_sitz = 0;
 
-//      Erstelle objekte Array vom Typ Aufgabe1.Auto, hier sind die Autos gespeichert
+//      Erstelle objekte Array vom Typ Auto, hier sind die Autos gespeichert
         Auto[] objekte = new Auto[anzahl];
 
 //      Erstelle die Autos direkt in den Array
